@@ -34,6 +34,7 @@ export class BookListComponent implements OnInit, OnDestroy {
   }
 
   onDeleteBook(book: Book) {
+    console.log("delete click");
     this.booksService.removeBook(book);
   }
 

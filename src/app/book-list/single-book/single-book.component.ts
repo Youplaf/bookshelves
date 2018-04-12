@@ -24,7 +24,6 @@ export class SingleBookComponent implements OnInit {
     this.booksService.getSingleBook(+id).then(
       (book: Book) => {
         this.book = book;
-        console.log(book);
       }
     );    
   }
