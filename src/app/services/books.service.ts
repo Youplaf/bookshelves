@@ -32,7 +32,7 @@ export class BooksService {
       (resolve, reject) => {
         firebase.database().ref('/books/' + id).once('value').then(
           (data) => {
-            resolve(data.val);
+            resolve(data.val());
           },
           (error) => {
             reject(error);
